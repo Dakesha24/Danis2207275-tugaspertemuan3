@@ -42,12 +42,12 @@ public class Soal1 {
         }
     }
 
-    private static boolean isKonsonan(char karakter) {
-        return karakter >= 'a' && karakter <= 'z' && !"aeiou".contains(String.valueOf(karakter));
+    public static boolean isKonsonan(char karakter) {
+      return (karakter >= 'a' && karakter <= 'z') || (karakter >= 'A' && karakter <= 'Z') && !"aeiouAEIOU".contains(String.valueOf(karakter));
     }
-
-    private static boolean isVokal(char karakter) {
-        return "aeiou".contains(String.valueOf(karakter));
+    
+    public static boolean isVokal(char karakter) {
+      return "aeiouAEIOU".contains(String.valueOf(karakter));
     }
 }
 
